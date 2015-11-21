@@ -77,7 +77,10 @@ metalsmith
     // (optional)
     skipMetadata: false,
     // Any options you want to pass to the [slug](https://github.com/dodo/node-slug) package.
-    slug: {mode: 'rfc3986'}
+    slug: {mode: 'rfc3986'},
+    // Any key/value pairs in the metadata object will be attached to the file object
+    // for any generated tag pages.
+    metadata: {}
   }));
 ```
 
